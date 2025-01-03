@@ -3,6 +3,7 @@
 # nmap-append = '-T3'
 # verbose = 1
 # max-scans = 30
+max-scans = 5
 
 # Configure global options here.
 [global]

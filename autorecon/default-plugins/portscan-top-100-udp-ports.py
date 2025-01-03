@@ -6,8 +6,8 @@ class Top100UDPPortScan(PortScan):
 
 	def __init__(self):
 		super().__init__()
-		self.name = 'Top 100 UDP Ports'
-		self.description = 'Performs an Nmap scan of the top 100 UDP ports.'
+		self.name = 'Top 15 UDP Ports'
+		self.description = 'Performs an Nmap scan of the top 15 UDP ports.'
 		self.type = 'udp'
 		self.specific_ports = True
 		self.tags = ['default', 'default-port-scan', 'long']
@@ -21,7 +21,7 @@ class Top100UDPPortScan(PortScan):
 				else:
 					return []
 			else:
-				process, stdout, stderr = await target.execute('nmap {nmap_extra} -sU -A --top-ports 100 -oN "{scandir}/_top_100_udp_nmap.txt" -oX "{scandir}/xml/_top_100_udp_nmap.xml" {address}', blocking=False)
+				process, stdout, stderr = await target.execute('nmap {nmap_extra} -sU -A --top-ports 15 -oN "{scandir}/_top_15_udp_nmap.txt" -oX "{scandir}/xml/_top_15_udp_nmap.xml" {address}', blocking=False)
 			services = []
 			while True:
 				line = await stdout.readline()
