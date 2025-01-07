@@ -15,8 +15,8 @@ password-wordlist = '/usr/share/seclists/Passwords/2023-200_most_used_passwords.
 tool = 'gobuster'
 ext = 'txt,html,php,jsp,pdf'
 wordlist = [
- 	'/usr/share/wordlists/dirb/common.txt',
- 	'/usr/share/wordlists/dirb/big.txt',
- 	'/usr/share/wordlists/dirbuster/directory-list-2.3-small.txt',
-    '/usr/share/wordlists/dirbuster/directory-list-2.3-medium.txt'
+    '/usr/share/wordlists/dirb/common.txt',
+    '/usr/share/wordlists/dirb/big.txt'
+#    '/usr/share/wordlists/dirbuster/directory-list-2.3-small.txt',
+#    '/usr/share/wordlists/dirbuster/directory-list-2.3-medium.txt'
 ]
